@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Roboto", sans-serif;
+    background: #0f1117;
+    color: white;
+}
+
+.app-container {
+    padding: 30px 20px 60px;
+}
+
+.app-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.card {
+    background: #1c1f2e;
+    border: 1px solid #2a2d3e;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #5b8dee;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.input-block {
+    margin-bottom: 16px;
+}
+
+.label {
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    background: #13151f;
+    border-radius: 14px;
+    border: 1px solid #2a2d3e;
+    padding: 12px 14px;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.unit {
+    color: #5b8dee;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.swap {
+    text-align: center;
+    font-size: 22px;
+    color: #5b8dee;
+    margin: 10px 0;
+}
+
+.results {
+    background: #0f1117;
+    border: 1px solid #2a2d3e;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.result-line {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5b8dee;
+    margin-bottom: 8px;
+}
+
+.result-note {
+    font-size: 12px;
+    color: #777;
+}

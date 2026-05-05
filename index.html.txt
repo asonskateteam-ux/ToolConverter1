@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Tool Converter</title>
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f1117">
+
+    <!-- iPhone full screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Header -->
+    <h1 class="app-title">🔧 Tool Converter</h1>
+    <p class="subtitle">Torque · Socket Finder</p>
+
+    <!-- TORQUE CARD -->
+    <div class="card">
+        <div class="card-title">TORQUE</div>
+
+        <div class="input-block">
+            <label class="label">Foot‑pounds</label>
+            <div class="input-row">
+                <input id="ftlbInput" type="number" placeholder="0">
+                <span class="unit">ft/lb</span>
+            </div>
+        </div>
+
+        <div class="swap">⇅</div>
+
+        <div class="input-block">
+            <label class="label">Newton‑metres</label>
+            <div class="input-row">
+                <input id="nmInput" type="number" placeholder="0">
+                <span class="unit">Nm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOCKET CARD -->
+    <div class="card">
+        <div class="card-title">SOCKET FINDER</div>
+
+        <div class="input-block">
+            <label class="label">Millimetres</label>
+            <div class="input-row">
+                <input id="mmInput" type="number" placeholder="0">
+                <span class="unit">mm</span>
+            </div>
+        </div>
+
+        <div class="swap">⇅</div>
+
+        <div class="input-block">
+            <label class="label">Inches (decimal)</label>
+            <div class="input-row">
+                <input id="inchInput" type="number" step="0.0001" placeholder="0">
+                <span class="unit">in</span>
+            </div>
+        </div>
+
+        <div class="results">
+            <div id="socket1" class="result-line"></div>
+            <div id="socket2" class="result-line"></div>
+            <div id="socketNote" class="result-note"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
